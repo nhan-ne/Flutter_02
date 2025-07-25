@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/layout_1.dart';
+import 'package:flutter_application_1/bt_buton.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         scaffoldBackgroundColor: Colors.grey[200],
       ),
-      home: Layout(),
+      home: BtButton(),
     );
   }
 }
@@ -101,4 +101,3 @@ class MyApp extends StatelessWidget {
 //     );
 //   }
 // }
-
