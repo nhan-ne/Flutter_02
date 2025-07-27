@@ -1,0 +1,9 @@
+# Ignore everything
+/*
+
+# Except the files/folders we want to keep
+!lib/
+!pubspec.yaml
+!pubspec.lock
+!README.md
+!.gitignore
