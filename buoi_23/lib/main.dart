@@ -35,15 +35,33 @@ class _MyHomePageState extends State<MyHomePage> {
     },
     {
       'id': 2,
+      'image': 'https://eteft.com/cdn/shop/files/5-giay-nike-wmns-air-jordan-1-low-white-wolf-grey-dc0774-105.jpg?v=1706413613&width=1445',
+      'name': 'Nike Jordan 1',
+      'price': 127.00,
+    },
+    {
+      'id': 3,
+      'image': 'https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcShBqQATfZAWq9RXmDTHskIgHYX4OOH4BWKGv33vNACyI4inBDsoUdZ1F1_4ZC24_OGp8d2UcsPBrBpJMeXGBiIHP4q5stDN1P79Rb1w148rl-Hi7EjjJLfwbUp4xi-4rePJGG9Fbo&usqp=CAc',
+      'name': 'Adidas Campus 00s',
+      'price': 182.04,
+    },
+    {
+      'id': 4,
       'image': 'https://kallos.co/cdn/shop/products/giay-adidas-stan-smith-lux-cream-white-kallos-vietnam-1.jpg?v=1676071311&width=1080',
       'name': 'Adidas Stan Smith Lux',
       'price': 193.04,
     },
     {
-      'id': 3,
+      'id': 5,
       'image': 'https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRI0iEGtgbnwDApazvrGrHIxcjkpL2UXfUsrq62SnK1drPo9UjIkx-3sq-hh6-oWGDUI1h1thPAqImlwFwLjVFSFVk1B3OhZwuzzeaSPDIHs3QBmP51ZqcLPSM',
       'name': 'Puma Ca Pro Suede Fs -Archive',
       'price': 120.00,
+    },
+    {
+      'id': 6,
+      'image': 'https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQc-KxXZP7hJgtI4wbeDsbfReykEIoioNQDJ8IrUinv-RdjAuzIHUXh8xRLZji8Eja5LOhhX3mYsutGSNyzPT-9XLqGRSioAeCoPbOUZhzvZyuYJa-QHrS8TvslS2uFS0RD59cTMg&usqp=CAc',
+      'name': 'Puma Skye Clean Black/White 380147-04',
+      'price': 67.00,
     },
   ];
 
@@ -149,7 +167,7 @@ class Shoe {
 
   factory Shoe.fromMap(Map<String, dynamic> map) {
     return Shoe(
-      id: map['id'] ?? '',
+      id: map['id'] ?? 0,
       image: map['image'] ?? '',
       name: map['name'] ?? '',
       price: (map['price'] as num).toDouble(),
